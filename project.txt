@@ -51,3 +51,5 @@ http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_
 
 5. 
 (code in ex7_code.py)
+Υπάρχει "bug" στη βιβλιοθήκη του zipfile όπου με διαφορετικό κωδικό του σωστού, μπορεί να γίνει extract του αρχείου με μηδενικό μέγεθος.
+Στην προτεινόμενη λύση, αγνοούνται όλα τα exceptions και γίνονται οι απαραίτητοι έλεγχοι για το πότε το extraction έχει πραγματοποιηθεί επιτυχώς.
