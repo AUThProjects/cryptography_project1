@@ -53,3 +53,39 @@ http://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_
 (code in ex7_code.py)
 Υπάρχει "bug" στη βιβλιοθήκη του zipfile όπου με διαφορετικό κωδικό του σωστού, μπορεί να γίνει extract του αρχείου με μηδενικό μέγεθος.
 Στην προτεινόμενη λύση, αγνοούνται όλα τα exceptions και γίνονται οι απαραίτητοι έλεγχοι για το πότε το extraction έχει πραγματοποιηθεί επιτυχώς.
+
+
+9.
+i)
+Useful Links:
+* https://www.schneier.com/blowfish.html
+* http://stackoverflow.com/questions/5554526/comparison-of-des-triple-des-aes-blowfish-encryption-for-data
+* http://www.cs.rit.edu/~ksf6458/cryptography/Final.pdf
+* video - https://www.youtube.com/watch?v=BejhX1H_szs
+
+
+
+
+Περιγραφή Blowfish
+
+Ο αλγόριθμος Blowfish είναι ένας συμμετρικός αλγόριθμος κρυπρογράφησης τμήματος που προτάθηκε το 1993 από τον Bruce Scneier και έχει αρκετά μεγάλη διάδοση στη σημερινή εποχή.
+Παρέχει αποδεκτό ρυθμό κρυπτογράφησης και δεν έχει υπάρξει κάποια μέθοδος κρυπτανάλυσης που να έχει δημοσιευτεί μέχρι σήμερα. Αποτελεί εναλλακτική στο δημοφιλέστατο AES (Advanced Encryption Standard), με τον δεύτερο να έχει μεγαλύτερο μερίδιο χρήσης
+
+
+Ο αλγόριθμος, όπως ισχύει και στον DES και τον AES, κάνει χρήση s-boxes.
+Πιο συγκεκριμένα, ο Blowfish έχει block μεγέθους 64-bit, χρησιμοποιεί το σχήμα Feistel.
+
+[περιγραφή λειτουργίας]
+http://en.wikipedia.org/wiki/Blowfish_%28cipher%29
+
+
+Τρωτά σημεία:
+Ο Blowfish θεωρείται ευάλωτος σε επιθέσεις όπου χρησιμοποιούνται "αδύναμα" κλειδιά. Οι χρήστες θα πρέπει να αποφεύγουν ορισμένες κλάσεις κλειδιών που είναι γνωστές για την αδυναμίες τους στη χρήση τους με τον Blowfish ή να στραφούν προς εναλλακτικές όπως ο AES, ο ChaCha (που χρησιμοποιείται από τη Google) ή ο Salsa20
+
+Μετεξελίξεις του αποτελούν:
+* Twofish [http://en.wikipedia.org/wiki/Twofish]
+* Threefish [http://en.wikipedia.org/wiki/Threefish]
+
+
+
+
