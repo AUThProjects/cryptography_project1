@@ -2,9 +2,9 @@ from zipfile import *
 import os
 
 # Relevant files
-input_zip_file = 'test_zip.zip'
-output_file = 'test_zip'
-dictionary_file = 'english.txt'
+input_zip_file = '../input/test_zip.zip'
+output_file = '../output/test_zip'
+dictionary_file = '../input/english.txt'
 
 if __name__ == "__main__":
     z_file = ZipFile(input_zip_file)
